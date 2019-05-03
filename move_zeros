@@ -1,0 +1,14 @@
+class Sol:
+    def move_zeros(self,list):
+        count=0
+        for num in list:
+            if num==0:
+                list.remove(num)
+                count+=1
+        list+=count*[0]
+        return list
+
+
+if __name__ == '__main__':
+    p1=Sol()
+    print(p1.move_zeros([1,0,3,0,12]))
